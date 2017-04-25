@@ -1,0 +1,157 @@
+/*
+Responsive 996px grid system ~ Style CSS.
+Copyright 2013, Josh Cope
+*/
+
+
+/* =============================================================================
+   Site Styles
+   ========================================================================== */
+
+/* =============================================================================
+   Page Styles
+   ========================================================================== */
+  *{
+    margin:0px;
+    padding: 0px;
+  }
+  html body{
+    background-color: rgba(215,206,199,.6);
+
+  }
+  
+  /*nav{
+    padding: 2px ;
+    */
+  
+  /*header nav ul li{
+    display: inline-block;
+    text-align: center;
+  }*/
+  header nav ul li a{
+    padding: 5px 20px !important;
+    text-decoration: none !important;
+    color: #565656 !important;
+    margin-left: 145px !important;
+    margin-top: 5px !important;
+    font-size: 16px !important;
+  }
+  header nav ul li a:hover{
+  background-color: rgba(118,50,63,.4) !important; 
+  color:white !important;
+}
+
+/*.container-fluid{
+  border-bottom: 3px;
+}
+.agent{
+  display: inline-block;
+  margin-top: 15%;
+  position: absolute;
+  left: 76%;
+  
+ }*/
+
+
+.agent_info{
+  display: inline-block;
+  margin-top: 5%;
+  background-color: rgba(192,159,128,.5);
+  padding: 15px;
+  left: 76%;
+  font-family: 'Copperplate';
+  font-size: 15px;
+ }
+
+/*#myCarousel{
+  position: absolute;
+  margin-top: 170px;
+  width: 68%;
+}
+*/
+#logo{
+  text-align: center;
+  margin-left: 7%;
+}
+
+.container{
+  margin-top: 10%;
+}
+
+
+.footercontainer{
+  position: relative;
+  margin-top: 100%;
+}
+
+.footer {
+   position:fixed;
+   left:0px;
+   bottom:0px;
+   width:100%;
+   background:#999;
+}
+.footertext{
+  text-align: center;
+  font-size: 11px;
+}
+
+
+/* =============================================================================
+   Media Queries
+   ========================================================================== */
+
+
+/* Tablet Portrait size to Base 996px */
+
+@media only screen and (min-width: 768px) and (max-width: 995px) {
+    .container {
+        background-color: rgba(255, 0, 0, 0.25);
+    }
+}
+
+
+/* All Mobile Sizes */
+
+@media only screen and (max-width: 767px) {
+    .container {
+        background-color: rgba(255, 255, 0, 0.25);
+    }
+}
+
+
+/* Mobile Landscape Size to Tablet Portrait */
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    .container {
+        background-color: rgba(0, 255, 0, 0.25);
+    }
+}
+
+
+/* Mobile Portrait Size to Mobile Landscape Size */
+
+@media only screen and (max-width: 479px) {
+    .container {
+        background-color: rgba(0, 255, 255, 0.25);
+    }
+}
+
+
+/* =============================================================================
+   Font-Face
+   ========================================================================== */
+
+
+/* This is the proper syntax for an @font-face file
+
+/* @font-face {
+font-family: 'FontName';
+src: url('../fonts/FontName.eot');
+src: url('../fonts/FontName.eot?iefix') format('embedded-opentype'),
+url('../fonts/FontName.woff') format('woff'),
+url('../fonts/FontName.ttf') format('truetype'),
+url('../fonts/FontName.svg#FontName') format('svg');
+font-weight: normal;
+font-style: normal; }
+*/
