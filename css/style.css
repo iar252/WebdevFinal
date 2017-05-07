@@ -37,7 +37,7 @@ Copyright 2013, Josh Cope
     font-size: 16px !important;
   }
   header nav ul li a:hover{
-  background-color: rgba(118,50,63,.4) !important; 
+  background-color: rgba(192,159,128,.5) !important; 
   color:white !important;
 }
 
@@ -51,16 +51,48 @@ Copyright 2013, Josh Cope
   left: 76%;
   
  }*/
+html main{
+  margin-top: 10%;
 
+  margin-bottom:15%;
+}
 
+html main p{
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif
+}
+html main h2{
+  font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif
+}
+
+html main h3{
+  font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif
+}
+.interiordesigns{
+  margin-top: 5%;
+  margin-left: -3%;
+}
+
+.agent-img{
+  position: relative;
+}
+
+.indenting{
+  text-indent: 50px;
+}
+
+.textsize{
+  font-size: 16px;
+}
 .agent_info{
   display: inline-block;
   margin-top: 5%;
   background-color: rgba(192,159,128,.5);
   padding: 15px;
-  left: 76%;
+  left: 5%;
   font-family: 'Copperplate';
   font-size: 15px;
+  position: absolute;
+  z-index: 1;
  }
 
 /*#myCarousel{
@@ -74,10 +106,9 @@ Copyright 2013, Josh Cope
   margin-left: 7%;
 }
 
-.container{
-  margin-top: 10%;
+.containerbackground{
+  background: rgba(255,255,255,.2);
 }
-
 
 .footercontainer{
   position: relative;
@@ -97,6 +128,11 @@ Copyright 2013, Josh Cope
 }
 
 
+/*.grid_3{
+  margin-left: 2% !important;
+}
+*/
+
 /* =============================================================================
    Media Queries
    ========================================================================== */
@@ -104,38 +140,38 @@ Copyright 2013, Josh Cope
 
 /* Tablet Portrait size to Base 996px */
 
-@media only screen and (min-width: 768px) and (max-width: 995px) {
+@media only screen and (min-width: 368px) and (max-width: 1095px) {
     .container {
-        background-color: rgba(255, 0, 0, 0.25);
+        background-color: rgba(129,123,119,.5);
     }
 }
 
 
 /* All Mobile Sizes */
-
+/*
 @media only screen and (max-width: 767px) {
     .container {
         background-color: rgba(255, 255, 0, 0.25);
     }
-}
+}*/
 
 
 /* Mobile Landscape Size to Tablet Portrait */
 
-@media only screen and (min-width: 480px) and (max-width: 767px) {
+/*@media only screen and (min-width: 480px) and (max-width: 767px) {
     .container {
         background-color: rgba(0, 255, 0, 0.25);
     }
 }
-
+*/
 
 /* Mobile Portrait Size to Mobile Landscape Size */
 
-@media only screen and (max-width: 479px) {
+/*@media only screen and (max-width: 479px) {
     .container {
         background-color: rgba(0, 255, 255, 0.25);
     }
-}
+}*/
 
 
 /* =============================================================================
