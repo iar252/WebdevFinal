@@ -53,7 +53,6 @@ Copyright 2013, Josh Cope
  }*/
 html main{
   margin-top: 10%;
-
   margin-bottom:15%;
 }
 
@@ -101,9 +100,12 @@ html main h3{
   width: 68%;
 }
 */
-#logo{
+/*#logo{
   text-align: center;
   margin-left: 7%;
+}*/
+.logoPush{
+  margin-left: 22%;
 }
 
 .containerbackground{
@@ -127,6 +129,32 @@ html main h3{
   font-size: 11px;
 }
 
+.wrap {
+  height: 343px;
+  width: 253px;
+  position: relative;
+}
+
+.testimonialDescription {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  color: black;
+  background: rgba(255,255,255,.8);
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  
+}
+
+.wrap:hover .testimonialDescription {
+  visibility: visible;
+  opacity: 1;
+}
+.descriptiontextsize{
+  font-size: 13px;
+}
 
 /*.grid_3{
   margin-left: 2% !important;
