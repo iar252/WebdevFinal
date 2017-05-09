@@ -157,16 +157,44 @@ html main h3{
   font-size: 13px;
 }
 
-    .container {
-        position: relative;
-        padding: 2%;
-    }
+.container {
+  position: relative;
+  padding: 2%;
+}
     
-    .mix{
-        text-align: left;
-        display: none;
-        height: 250px;
-    }
+.mix{
+  text-align: left;
+  display: none;
+  height: 250px;
+}
+
+
+.controls{
+  background: black;
+  color: white;
+  padding: 5px 10px;
+  position: relative;
+}
+
+.controls:hover{
+  background: #c09f80;
+  position: relative;
+}
+
+.sort{
+  padding-left: 20%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.sort:hover{
+  background: #c09f80;
+  color: white;
+}
+
+.top{
+  margin-top: -6%;
+}
 
 /* =============================================================================
    Media Queries

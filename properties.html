@@ -45,17 +45,20 @@
 
 <main>
 
-<div class="controls">
-	<label>Sort By:</label>
-	    <button class="sort" data-sort="default">Most Popular</button>
-        <button class="sort" data-sort="myorder:asc">Highest to Low</button>
-        <button class="sort" data-sort="myorder:desc">Lowest to High</button>
+<div class="container top">
+<div class="dropdown col-lg-12">
+  <button class="controls" type="button" data-toggle="dropdown">Sort By:<span class="caret"></span></button>
+  <ul class="dropdown-menu">
+	    <li class="sort" data-sort="default">Most Popular</li>
+	    <li class="divider"></li>
+        <li class="sort" data-sort="myorder:asc">Highest to Low</li>
+        <li class="divider"></li>
+        <li class="sort" data-sort="myorder:desc">Lowest to High</li>
+  </ul>
+</div>
 </div>
 
 <div class="container" id="Container">
-
-
-	
         <div class="mix for_sale col-lg-4" data-myorder="1"> <img src="img/home1.png"> </div>
          <!-- http://www.rutenbergnyc.com/detail.aspx?id=1600042 -->
 
@@ -86,11 +89,10 @@
         <div class="mix for_sale col-lg-4" data-myorder="8"><img src="img/home8.png"></div>
         <!-- http://www.rutenbergnyc.com/detail.aspx?id=69055TH -->
 
+		<div class="mix for_sale col-lg-4" data-myorder="9"><img src="img/home9.png"></div>
+        <!-- http://www.rutenbergnyc.com/detail.aspx?id=1662386 -->
+
 </div>
-
-
-
-
 </main>
 
 
@@ -101,8 +103,8 @@
     <footer class="footer">
     
     	<span class="footertext"><p>Melanie Siben: Master Certified Negotiation Expert and Real Estate Salesperson. Charles Rutenberg, LLC - The Fastest Growing Real Estate Brokerage In NYC <br>
-127 East 56th Steet off Park Avenue, New York, NY 10022  O: 212 688 1000 x 386  C: 917 292 9779  MSiben@RutenbergNYC.com<br>
-© 2016 by ManhattanManhattan<p></span>
+		127 East 56th Steet off Park Avenue, New York, NY 10022  O: 212 688 1000 x 386  C: 917 292 9779  MSiben@RutenbergNYC.com<br>
+		© 2016 by ManhattanManhattan<p></span>
     	
     </footer>
 
@@ -111,7 +113,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
 
-        <script type="text/javascript">
+    <script type="text/javascript">
      $(function() {
 
 		$('#Container').mixItUp({
