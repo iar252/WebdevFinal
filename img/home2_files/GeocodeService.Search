@@ -1,0 +1,70 @@
+/**/_xdc_._q9dip2 && _xdc_._q9dip2( {
+   "results" : [
+      {
+         "address_components" : [
+            {
+               "long_name" : "East 8th Street",
+               "short_name" : "E 8th St",
+               "types" : [ "route" ]
+            },
+            {
+               "long_name" : "60",
+               "short_name" : "60",
+               "types" : [ "street_number" ]
+            },
+            {
+               "long_name" : "Manhattan",
+               "short_name" : "Manhattan",
+               "types" : [ "political", "sublocality", "sublocality_level_1" ]
+            },
+            {
+               "long_name" : "New York",
+               "short_name" : "New York",
+               "types" : [ "locality", "political" ]
+            },
+            {
+               "long_name" : "New York County",
+               "short_name" : "New York County",
+               "types" : [ "administrative_area_level_2", "political" ]
+            },
+            {
+               "long_name" : "New York",
+               "short_name" : "NY",
+               "types" : [ "administrative_area_level_1", "political" ]
+            },
+            {
+               "long_name" : "United States",
+               "short_name" : "US",
+               "types" : [ "country", "political" ]
+            },
+            {
+               "long_name" : "10003",
+               "short_name" : "10003",
+               "types" : [ "postal_code" ]
+            }
+         ],
+         "formatted_address" : "60 E 8th St, New York, NY 10003, USA",
+         "geometry" : {
+            "location" : {
+               "lat" : 40.7306031,
+               "lng" : -73.9930165
+            },
+            "location_type" : "ROOFTOP",
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 40.73195208029149,
+                  "lng" : -73.99166751970849
+               },
+               "southwest" : {
+                  "lat" : 40.72925411970849,
+                  "lng" : -73.99436548029151
+               }
+            }
+         },
+         "place_id" : "ChIJzdQuP5pZwokRLEbXHJXGaFU",
+         "types" : [ "establishment", "point_of_interest", "premise" ]
+      }
+   ],
+   "status" : "OK"
+}
+ )

@@ -14,7 +14,7 @@
 <header>
 <nav class="navbar navbar-default navbar-fixed-top">
 	<div class="container-fluid">
-	<div class="col-lg-offset-5 col-lg-7">
+	<div class="col-md-offset-2 col-md-10 col-lg-offset-5 col-lg-7">
 	<div class="navbar-header"  id="logo">
 <div class="logoPush">
      	<img src="img/logo.png">
@@ -42,27 +42,57 @@
 	</div>
 </nav>
 </header>
+
 <main>
 
-<h1> this is properties</h1>
+<div class="controls">
+	<label>Sort By:</label>
+	    <button class="sort" data-sort="default">Most Popular</button>
+        <button class="sort" data-sort="myorder:asc">Highest to Low</button>
+        <button class="sort" data-sort="myorder:desc">Lowest to High</button>
+</div>
+
+<div class="container" id="Container">
+
+
+	<div class="col-lg-4">
+        <div class="mix for_sale" data-myorder="1"> <img src="img/home1.png"> </div>
+         <!-- http://www.rutenbergnyc.com/detail.aspx?id=1600042 -->
+	</div>
+    <div class="col-lg-4">
+        <div class="mix for_sale" data-myorder="2"><img src="img/home2.png"></div>
+		<!-- http://www.rutenbergnyc.com/detail.aspx?id=1650489 -->
+	</div>
+	<div class="col-lg-4">
+        <div class="mix for_sale" data-myorder="3"><img src="img/home3.png"></div>
+        <!-- http://www.rutenbergnyc.com/detail.aspx?id=1658002 -->
+	</div>
+    <div class="col-lg-4">
+        <div class="mix for_sale" data-myorder="4"><img src="img/home4.png"></div>
+        <!-- http://www.rutenbergnyc.com/detail.aspx?id=1629688 -->
+	</div>
+    <div class="col-lg-4">
+        <div class="mix for_sale" data-myorder="5"><img src="img/home5.png"></div>
+        <!-- http://www.rutenbergnyc.com/detail.aspx?id=1660102 -->
+	</div>
+    <div class="col-lg-4">
+        <div class="mix for_sale" data-myorder="6"><img src="img/home6.png"></div>
+        <!-- http://www.rutenbergnyc.com/detail.aspx?id=1657949 -->
+	</div>
+    <div class="col-lg-4">
+        <div class="mix for_sale" data-myorder="7"><img src="img/home7.png"></div>
+        <!-- http://www.rutenbergnyc.com/detail.aspx?id=360321 -->
+	</div>
+    <div class="col-lg-4">
+        <div class="mix for_sale" data-myorder="8"><img src="img/home8.png"></div>
+        <!-- http://www.rutenbergnyc.com/detail.aspx?id=69055TH -->
+	</div>
+</div>
 
 
 
 
 </main>
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -78,8 +108,26 @@
     </footer>
 
     <script src="http://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
-
+	<script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+        <script type="text/javascript">
+     $(function() {
+
+		$('#Container').mixItUp({
+            load: {
+                filter: 'all'
+            },
+            controls: {
+                toggleFilterButtons: false,
+                toggleLogic: 'and' 
+            }
+        });
+
+
+    });
+    </script>
 
 </body>
 </html>
