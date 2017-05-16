@@ -2,12 +2,12 @@
 <html>
 <head>
 	<title>Contact</title>
-			<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<link rel="stylesheet" type="text/css" href="css/base.css">
 		<link rel="stylesheet" type="text/css" href="css/normalize.css">
 		<link rel="stylesheet" type="text/css" href="css/grid.css">
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-	    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
 
 <!-- for the map on this page, i looked at the code of https://developers.google.com/maps/documentation/javascript/custom-markers#customizing_a_map_marker 
@@ -17,51 +17,71 @@ I added comments to show my comprehension -->
 
 </head>
 <body>
-<header>
-<nav class="navbar navbar-default navbar-fixed-top">
-	<div class="container-fluid">
-	<div class="col-lg-offset-5 col-lg-7">
-	<div class="navbar-header"  id="logo">
-<div class="logoPush">
-     	<img src="img/logo.png">
-     	</div>
-</div>
-	</div>
-		<ul class="nav navbar-nav navbar-middle">
-		<div class="col-lg-2">
-			<li><a href="index.html">Home</a></li>
-			</div>
-
-			<div class="col-lg-2">
-			<li><a href="properties.html">Properties</a></li>
-			</div>
-			<div class="col-lg-2">
-			<li><a href="about.html">About</a></li>
-			</div>
-			<div class="col-lg-2">
-			<li><a href="testimonials.html">Testimonials</a></li>
-			</div>
-			<div class="col-lg-2">
-			<li><a href="contact.html">Contact</a></li>
-			</div>
-		</ul>
-	</div>
-</nav>
-</header>
+  <header>
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="col-lg-offset-5 col-lg-7">
+          <div class="navbar-header"  id="logo">
+            <div class="logoPush">
+                <img src="img/logo.png">
+              </div>
+          </div>
+        </div>
+        <ul class="nav navbar-nav navbar-middle">
+          <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
+            <li><a href="index.html">Home</a></li>
+          </div>
+          <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
+            <li><a href="properties.html">Properties</a></li>
+          </div>
+          <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
+            <li><a href="about.html">About</a></li>
+          </div>
+          <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
+            <li><a href="testimonials.html">Testimonials</a></li>
+          </div>
+          <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
+            <li><a href="contact.html">Contact</a></li>
+          </div>
+        </ul>
+      </div>
+    </nav>
+  </header>
 
 <main>
-<div class="container-fluid">
-<div id="map"></div>
-</div>
+
+	<div class="container">
+  		<div class="col-sm-12 col-md-12 col-lg-12">
+  			<div id="map"> </div>
+  		</div>
+
+  		<div class="col-sm-12 col-md-12 col-lg-12">
+  			<h3>Charles Rutenberg, LLC
+  				<br>127 East 56th Street
+  				<br>New York, New York, 10022
+        </h3>
+  				<br>
+  				<br>
+  		</div>
+
+  		<div class="col-sm-12 col-md-12 col-lg-offset-4 col-lg-4 col-lg-offset-4">
+  			<address class="email" style="text-align: center;">
+  				<a href="mailto:MelanieSiben@gmail.com" style=" text-decoration: none;"><h3>Contact Melanie Directly</h3></a>
+  			</address>
+  		</div>
+	</div>
+</main>
 
 <script>
  var map;
       function initMap() {
         map = new google.maps.Map(document.getElementById('map'), {
+          // center shows what the map will display when the page loads
 	        center: new google.maps.LatLng(40.829178,-73.1684557),
 	      	zoom: 9,
         });
 
+        // the images i used for the markers
         var icons = {
           rutenberg: {
             icon: 'img/rutenberg.png'
@@ -71,6 +91,7 @@ I added comments to show my comprehension -->
           }
 
         };
+
 
         var arrayOfLocations = [
           {
@@ -118,9 +139,6 @@ I added comments to show my comprehension -->
         });
       }
     </script>
-
-
-
 
 
 </main>

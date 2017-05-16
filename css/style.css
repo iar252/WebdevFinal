@@ -112,10 +112,6 @@ figcaption .bedsandbaths{
   margin-left: -3%;
 }
 
-.agent-img{
-  position: relative;
-}
-
 .indenting{
   text-indent: 50px;
 }
@@ -123,6 +119,11 @@ figcaption .bedsandbaths{
 .textsize{
   font-size: 16px;
 }
+
+.agent-img{
+  position: relative;
+}
+
 .agent_info{
   display: inline-block;
   margin-top: 5%;
@@ -135,20 +136,9 @@ figcaption .bedsandbaths{
   z-index: 1;
  }
 
-/*#myCarousel{
-  position: absolute;
-  margin-top: 170px;
-  width: 68%;
-}
-*/
-/*#logo{
-  text-align: center;
-  margin-left: 7%;
-}*/
 .logoPush{
   margin-left: 22%;
 }
-
 .containerbackground{
   background: rgba(255,255,255,.2);
 }
@@ -241,8 +231,18 @@ figcaption .bedsandbaths{
 
 }
 
+.email{
+  background: black;
+  padding:20px;
+}
 
+.email:hover{
+  background: #c09f80;
+}
 
+address a h3{
+  color: white;
+}
 /* =============================================================================
    Media Queries
    ========================================================================== */
@@ -253,37 +253,72 @@ figcaption .bedsandbaths{
 @media only screen and (min-width: 368px) and (max-width: 1095px) {
     .container {
         background-color: rgba(129,123,119,.5);
-    }
-    
 
+    }
 }
-
-
-/* All Mobile Sizes */
-/*
-@media only screen and (max-width: 767px) {
-    .container {
-        background-color: rgba(255, 255, 0, 0.25);
-    }
-}*/
-
 
 /* Mobile Landscape Size to Tablet Portrait */
 
-/*@media only screen and (min-width: 480px) and (max-width: 767px) {
+@media only screen and (min-width: 480px) and (max-width: 767px) {
     .container {
         background-color: rgba(0, 255, 0, 0.25);
     }
+
+  html main{
+    margin-top: 35%;
+    margin-bottom:15%;
+  }
 }
-*/
+
+/* All Mobile Sizes */
+@media only screen and (max-width: 767px) {
+    .container {
+        background-color: pink;
+    }
+
+    .agent-img{
+      width: 150px;
+    }
+    .agent_info{
+      display: block;
+      margin-top: -25%;
+      margin-left: 40%;
+      background-color: rgb(192,159,128);
+      padding: 15px;
+      left: 5%;
+      font-family: 'Copperplate';
+      font-size: 15px;
+      z-index: 1;
+    }
+}
+
 
 /* Mobile Portrait Size to Mobile Landscape Size */
 
-/*@media only screen and (max-width: 479px) {
+@media only screen and (max-width: 479px) {
     .container {
         background-color: rgba(0, 255, 255, 0.25);
     }
-}*/
+  html main{
+    margin-top: 48%;
+    margin-bottom:15%;
+  }
+  .agent-img{
+      width: 120px;
+      margin-top: 10px;
+    }
+  .agent_info{
+      display: block;
+      margin-top: -35%;
+      margin-left: 43%;
+      background-color: rgb(192,159,128);
+      padding: 5px;
+      left: 5%;
+      font-family: 'Copperplate';
+      font-size: 12px;
+      z-index: 1;
+    }
+}
 
 
 /* =============================================================================
